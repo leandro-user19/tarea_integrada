@@ -39,13 +39,6 @@ public class Vendedor {
 
     }
 
-    public double getComision() {
-        return comision;
-    }
-
-    public double getMontovendido() {
-        return montovendido;
-    }
 
 
     public void imprimir (){
