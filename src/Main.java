@@ -20,9 +20,4 @@ public static void main(String[] args) {
     System.out.println("Ingrese su meta cumplida: ");
     p1.setCumplimiento(sc.nextDouble());
     p1.imprimir();
-
-
-
-
-
 }

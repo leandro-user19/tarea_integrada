@@ -38,6 +38,14 @@ public class Vendedor {
         this.montovendido = montovendido;
 
     }
+    public String MensajeFinal() {
+        if (cumplimiento >= 90)
+            return "Vendedor con desempeño sobresaliente";
+        else if (cumplimiento >= 70)
+            return "Vendedor con desempeño aceptable";
+        else
+            return "Se requiere seguimiento comercial";
+    }
 
 
 
@@ -48,6 +56,7 @@ public class Vendedor {
             System.out.println("Comisión: " + calcularComision());
             System.out.println("Ingreso total: " + IngresoTotal());
             System.out.println("Estado: " + estado());
+            System.out.println("Mensaje final: " + MensajeFinal());
         }
     }
 
