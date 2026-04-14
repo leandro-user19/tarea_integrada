@@ -11,25 +11,31 @@ public class Vendedor {
 
     }
 
+    public double calcularComision(){
+        return montovendido * 0.08/100;
+    }
+
+
+    public double IngresoTotal() {
+        return montovendido + calcularComision();
+    }
+
+    public String estado(){
+        if (cumplimiento >= 90) return "Excelente";
+        else if (cumplimiento >= 70) return "Aceptable";
+        else return "Bajo";
+    }
     public void setComision(double comision) {
         this.comision = comision;
-        comision = montovendido*8/100;
     }
 
     public void setCumplimiento(double cumplimiento){
-        if (cumplimiento>=90){
-            System.out.println("Excelente");
-        }else if (cumplimiento>=70){
-            System.out.println("Aceptable");
-        }else if (cumplimiento<70){
-            System.out.println("Bajo");
-        }
-    }
+        this.cumplimiento = cumplimiento;
 
+    }
 
     public void setMontovendido(double montovendido){
         this.montovendido = montovendido;
-        this.montovendido += comision;
 
     }
 
@@ -38,16 +44,19 @@ public class Vendedor {
     }
 
     public double getMontovendido() {
-        return comision;
+        return montovendido;
     }
+
 
     public void imprimir (){
-        System.out.println("Nombre: "+ nombre);
-        System.out.println("Area: "+ area);
-        System.out.println("Monto vendido: "+montovendido);
-        System.out.println("Comision: "+ this.comision);
-        System.out.println("Meta cumplida: "+ this.cumplimiento);
-        System.out.println("=====================");
-
+            System.out.println("Nombre: " + nombre);
+            System.out.println("Área: " + area);
+            System.out.println("Monto vendido: " + montovendido);
+            System.out.println("Comisión: " + calcularComision());
+            System.out.println("Ingreso total: " + IngresoTotal());
+            System.out.println("Estado: " + estado());
+        }
     }
-}
+
+
+
