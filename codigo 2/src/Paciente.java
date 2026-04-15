@@ -83,9 +83,20 @@ public class Paciente {
 
     public void imprimir(){
 
+
+        System.out.println("=========================");
+        System.out.println("Nombre: "+nombre);
+        System.out.println("Cedula: "+cedula);
+        System.out.println("Tipo de seguro: "+ tiposeguro);
+        System.out.println("Edad. "+edad);
+        System.out.println("Costo de consulta: "+costo);
+        System.out.println("Número de consultas: "+consultasRealizadas);
+        System.out.println("Prioridad: "+prioridad);
         System.out.println("Costo total: "+costoparcial() );
         System.out.println("Costo con descuento: "+descuento());
-        System.out.println("Su prioridad es: "+);
+        System.out.println("Su prioridad es: "+ clasificar());
+        System.out.println("Mensaje: "+mensaje());
+
 
     }
 

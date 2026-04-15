@@ -9,25 +9,27 @@ public static void main() {
 
     Paciente p1 = new Paciente();
 
-    System.out.println("Ingrese su nombre: ");
+    System.out.print("Ingrese su nombre: ");
     p1.nombre = sc.nextLine();
 
-    System.out.println("Ingrese su cedula: ");
+    System.out.print("Ingrese su cedula: ");
     p1.cedula = sc.nextInt();
+    sc.nextLine();
 
-    System.out.println("Ingrese su tipo de seguro(basico/premium/sin seguro): ");
+
+    System.out.print("Ingrese su tipo de seguro(basico/premium/sin seguro): ");
     p1.setTiposeguro(sc.nextLine());
 
-    System.out.println("Ingrese su edad: ");
-    p1.setEdad((sc.nextInt()));
+    System.out.print("Ingrese su edad: ");
+    p1.setEdad(sc.nextInt());
 
-    System.out.println("Ingrese el costo de la consulta: ");
+    System.out.print("Ingrese el costo de la consulta: ");
     p1.setCosto(sc.nextDouble());
 
-    System.out.println("Cuantas consultas tuvo: ");
+    System.out.print("Cuantas consultas tuvo: ");
     p1.setConsultasRealizadas(sc.nextInt());
 
-    System.out.println("Que prioridad es(1 al 5): ");
+    System.out.print("Que prioridad es(1 al 5): ");
     p1.setPrioridad(sc.nextInt());
     p1.imprimir();
 }
