@@ -81,6 +81,13 @@ public class Paciente {
         return "";
     }
 
+    public void imprimir(){
+
+        System.out.println("Costo total: "+costoparcial() );
+        System.out.println("Costo con descuento: "+descuento());
+        System.out.println("Su prioridad es: "+);
+
+    }
 
 
 }

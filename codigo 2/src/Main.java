@@ -29,5 +29,5 @@ public static void main() {
 
     System.out.println("Que prioridad es(1 al 5): ");
     p1.setPrioridad(sc.nextInt());
-
+    p1.imprimir();
 }
